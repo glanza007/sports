@@ -18,7 +18,7 @@ namespace Soccer.Data.Entities
         [Display(Name = "Logo")]
         public string ImageFullPath => string.IsNullOrEmpty(ImageUrl)
             ? null            
-            : $"https://localhost:7289/{ImageUrl.Substring(1)}";
+            : $"https://localhost:7130/{ImageUrl.Substring(1)}";
 
         public ICollection<User> Users { get; set; }
     }
